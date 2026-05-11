@@ -26,13 +26,13 @@ Overwrite C:\Windows\System32\sethc.exe? (Yes/No/All): yes
 
 Now, we can enter SHIFT 5 times to open terminal with system privileges.
 
-<figure><img src="../../../.gitbook/assets/5062148957ec1d70dccd080bdca93ddf.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/5062148957ec1d70dccd080bdca93ddf.png" alt=""><figcaption></figcaption></figure>
 
 ## Utilman
 
 Utilman is a built-in Windows application used to provide Ease of Access options during the lock screen:
 
-<figure><img src="../../../.gitbook/assets/73c7698a015de5a988fd815ff3e41473.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/73c7698a015de5a988fd815ff3e41473.png" alt=""><figcaption></figcaption></figure>
 
 When we click the ease of access button on the login screen, it executes C:\Windows\System32\Utilman.exe with SYSTEM privileges. If we replace it with a copy of cmd.exe, we can bypass the login screen again.
 

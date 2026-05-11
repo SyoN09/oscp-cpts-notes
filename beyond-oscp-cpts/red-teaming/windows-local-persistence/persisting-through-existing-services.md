@@ -7,7 +7,7 @@ Upload the [.aspx](https://github.com/tennc/webshell/blob/master/fuzzdb-webshell
 
 We can then run commands from the web server :
 
-<figure><img src="../../../.gitbook/assets/d9845057ebf54a61401ca61c2c268fe8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/d9845057ebf54a61401ca61c2c268fe8.png" alt=""><figcaption></figcaption></figure>
 
 ## Using MSSQL as a Backdoor
 

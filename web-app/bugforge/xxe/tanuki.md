@@ -6,13 +6,13 @@ Type: Daily Challenge
 
 We have option to import decks
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The thing that directly picks my eye is ability to import deck in XML format.
 
 To gen an idea about the overall flow, I downloaded the provided sample json file and uploaded it.
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 ```
 {
@@ -80,15 +80,15 @@ Next, I tried to understand the XML import flow, for this I used deep seek to co
 and it is successfully imported:\
 Note: edit the file extension and content-type during upload
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 To make it easier to work with, I compacted the XML length, keeping card count to only one
 
-<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 From here I tried to use various XXE payload from [https://hacktricks.wiki/en/pentesting-web/xxe-xee-xml-external-entity.html](https://hacktricks.wiki/en/pentesting-web/xxe-xee-xml-external-entity.html)
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 Default payload with `<!DOCTYPE>` gave some error which highlight, the backend XML parsers migh disable DTD processing by default because it's a major security risk. When DTD is disabled:
 
@@ -116,16 +116,16 @@ To bypass this I used `XInclude` payload from [https://hacktricks.wiki/en/pentes
 </deck>
 ```
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Then I opened the imported dec
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The payload works and loads the content of `/etc/passwd` \[Flag is somewhere else]
 
 after little of search, I found the flag in current directory
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (43).png" alt=""><figcaption></figcaption></figure>

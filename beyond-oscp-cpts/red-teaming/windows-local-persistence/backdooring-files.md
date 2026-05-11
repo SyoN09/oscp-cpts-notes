@@ -16,7 +16,7 @@ The outputed puttyX.exe will execute a reverse\_tcp meterpreter payload while do
 
 Instead of altering the actual executable file, we can tamper its shorcut file to execute backtoor and then execute the usual program.
 
-<figure><img src="../../../.gitbook/assets/7a7349b9dcc5af3180044ee1d7605967.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/7a7349b9dcc5af3180044ee1d7605967.png" alt=""><figcaption></figcaption></figure>
 
 In Calculator shortcut, we can change the target parameter to point to our malcious backdoor script.
 
@@ -38,13 +38,13 @@ We can hijack any file association to force the operating system to run a shell 
 
 In windows, file assocations are kept inside the registry `HKLM\Software\Classes`
 
-<figure><img src="../../../.gitbook/assets/3ae1b8356b38a349090e836026d6d480.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/3ae1b8356b38a349090e836026d6d480.png" alt=""><figcaption></figcaption></figure>
 
 For example, `.txt` is associated with `txtfile`  Programmatic ID (progid). progid is simply and identifier to a program installed ont he system.
 
 We can further check the subkey of progid under `shell\open\command`
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When we try to open .txt file, then system executes `%SystemRoot%\system32\NOTEPAD.EXE %1`, where `%1` represents the name of the opened file.
 
@@ -59,6 +59,7 @@ C:\Windows\system32\NOTEPAD.EXE $args[0]
 
 Then edit the registry value as;
 
-<figure><img src="../../../.gitbook/assets/f7ed25a701cf20ea85cf333b20708ffe.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/f7ed25a701cf20ea85cf333b20708ffe.png" alt=""><figcaption></figcaption></figure>
+
 
 Then when .txt file is opened, out backdoor gets trigerred hence giving us shell.

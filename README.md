@@ -21,7 +21,7 @@ Access the notes via **GitBook** here:\
 
 ## 🧾Visit [Here](https://dollarboysushil.com/posts/cpts-report-writing-guide/) to Learn About CPTS Exam Report Writing
 
-<figure><img src=".gitbook/assets/cpts-report-writing.webp" alt=""><figcaption></figcaption></figure>
+![[assets/cpts-report-writing.webp]]
 
 {% embed url="https://dollarboysushil.com/posts/cpts-report-writing-guide/" %}
 

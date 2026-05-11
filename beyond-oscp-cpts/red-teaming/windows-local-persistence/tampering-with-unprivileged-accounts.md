@@ -27,7 +27,7 @@ secedit /export /cfg config.inf
 
 Then we add the user to the desired groups.
 
-<figure><img src="../../../.gitbook/assets/765671a0355e2260c44e5a12a10f090e.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/765671a0355e2260c44e5a12a10f090e.png" alt=""><figcaption></figcaption></figure>
 
 Then we convert the .inf file to .sdb to load the configuration back to the system.
 
@@ -60,10 +60,10 @@ newuser3            S-1-5-21-1966530601-3185510712-10604624-1010
 we want to change RID of `newuser3` from 1010 to 500.\
 In registry Editor rid are stored in hex (1010 = 0x3F2) in little-endin notation (3F2 = F2 03)
 
-<figure><img src="../../../.gitbook/assets/d630140974989748ebcf150ba0696d14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/d630140974989748ebcf150ba0696d14.png" alt=""><figcaption></figcaption></figure>
 
 Then, changing to RID 500 (0x01F4) in little-endian (F401):<br>
 
-<figure><img src="../../../.gitbook/assets/8f2072b6d13b7343cf7b890586703ddf.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/8f2072b6d13b7343cf7b890586703ddf.png" alt=""><figcaption></figcaption></figure>
 
 `newuser3`is now administrator

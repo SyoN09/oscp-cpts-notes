@@ -6,19 +6,19 @@ Type: Daily Challenge
 
 Lab Interface
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 After order is successfully delivered, we have an option to report a problem
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 And and option to reqest for refund
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Refund request looks like this<br>
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ```
 POST /api/orders/2/refund HTTP/2
@@ -44,4 +44,4 @@ Te: trailers
 
 We can edit the `refund_amount` and get refund amount as much as we want.
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/image (16).png" alt=""><figcaption></figcaption></figure>
